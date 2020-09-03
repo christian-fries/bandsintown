@@ -1,0 +1,146 @@
+<T3DataStructure>
+    <meta type="array">
+        <langDisable type="integer">1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bandsintown/Resources/Private/Language/locallang_db.xlf:flexform.tab.general</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.orderBy>
+                        <TCEforms>
+                            <label>LLL:EXT:bandsintown/Resources/Private/Language/locallang_db.xlf:flexform.orderBy</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items>
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bandsintown/Resources/Private/Language/locallang_db.xlf:flexform.orderBy.sorting</numIndex>
+                                        <numIndex index="1">sorting</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:bandsintown/Resources/Private/Language/locallang_db.xlf:flexform.orderBy.name</numIndex>
+                                        <numIndex index="1">name</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">LLL:EXT:bandsintown/Resources/Private/Language/locallang_db.xlf:flexform.orderBy.trackerCount</numIndex>
+                                        <numIndex index="1">trackerCount</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.orderBy>
+                    <settings.orderDirection>
+                        <TCEforms>
+                            <label>LLL:EXT:bandsintown/Resources/Private/Language/locallang_db.xlf:flexform.orderDirection</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items>
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:bandsintown/Resources/Private/Language/locallang_db.xlf:flexform.orderDirection.asc</numIndex>
+                                        <numIndex index="1">ASC</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:bandsintown/Resources/Private/Language/locallang_db.xlf:flexform.orderDirection.desc</numIndex>
+                                        <numIndex index="1">DESC</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.orderDirection>
+                    <settings.limit>
+                        <TCEforms>
+                            <label>LLL:EXT:bandsintown/Resources/Private/Language/locallang_db.xlf:flexform.limit</label>
+                            <config>
+                                <type>input</type>
+                                <eval>num</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.limit>
+                    <settings.itemsPerPage>
+                        <TCEforms>
+                            <label>LLL:EXT:bandsintown/Resources/Private/Language/locallang_db.xlf:flexform.itemsPerPage</label>
+                            <config>
+                                <type>input</type>
+                                <eval>num</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.itemsPerPage>
+                    <settings.detailPid>
+                        <TCEforms>
+                            <label>LLL:EXT:bandsintown/Resources/Private/Language/locallang_db.xlf:flexform.detailPid</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                                <wizards>
+                                    <suggest>
+                                        <type>suggest</type>
+                                        <default>
+                                            <searchWholePhrase>1</searchWholePhrase>
+                                        </default>
+                                    </suggest>
+                                </wizards>
+                            </config>
+                        </TCEforms>
+                    </settings.detailPid>
+                    <settings.listPid>
+                        <TCEforms>
+                            <label>LLL:EXT:bandsintown/Resources/Private/Language/locallang_db.xlf:flexform.listPid</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                                <wizards>
+                                    <suggest>
+                                        <type>suggest</type>
+                                        <default>
+                                            <searchWholePhrase>1</searchWholePhrase>
+                                        </default>
+                                    </suggest>
+                                </wizards>
+                            </config>
+                        </TCEforms>
+                    </settings.listPid>
+                </el>
+            </ROOT>
+        </sDEF>
+        <appearance>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:bandsintown/Resources/Private/Language/locallang_db.xlf:flexform.tab.appearance</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.templateLayout>
+                        <TCEforms>
+                            <label>LLL:EXT:bandsintown/Resources/Private/Language/locallang_db.xlf:flexform.templateLayout</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items>
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">Standard</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.templateLayout>
+                </el>
+            </ROOT>
+        </appearance>
+    </sheets>
+</T3DataStructure>

@@ -1,0 +1,26 @@
+<f:form action="filteredList" objectName="filter" object="{filter}" class="form form-bandsintown-events mb-4">
+    <div class="form-row">
+        <div class="form-group col-12">
+            <label for="eventFilterSearchString"><f:translate key="filter.searchString" /></label>
+            <f:form.textfield property="searchString" id="eventFilterSearchString" class="form-control" />
+        </div>
+        <div class="form-group col-12 col-md-6">
+            <label for="eventFilterArtists"><f:translate key="filter.artists" /></label>
+            <f:form.select property="artists" id="eventFilterArtists" class="custom-select" options="{artists}" optionLabelField="name" multiple="1" />
+        </div>
+        <div class="form-group col-12 col-md-6">
+            <label for="eventFilterType"><f:translate key="filter.type" /></label>
+            <f:form.select property="type" id="eventFilterType" class="custom-select" options="{filterOptions.type}" />
+        </div>
+        <div class="form-group col-12 col-md-6">
+            <label for="eventFilterOrderBy"><f:translate key="filter.orderBy" /></label>
+            <f:form.select property="orderBy" id="eventFilterOrderBy" class="custom-select" options="{filterOptions.orderBy}" />
+        </div>
+        <div class="form-group col-12 col-md-6">
+            <label for="eventFilterOrderDirection"><f:translate key="filter.orderDirection" /></label>
+            <f:form.select property="orderDirection" id="eventFilterOrderDirection" class="custom-select" options="{filterOptions.orderDirection}" />
+        </div>
+    </div>
+
+    <button class="btn btn-primary" type="submit"><f:translate key="filter.buttonText" /></button>
+</f:form>

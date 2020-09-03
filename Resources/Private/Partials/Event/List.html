@@ -1,0 +1,23 @@
+<table  class="table table-striped table-condensed" >
+    <tr>
+        <th><f:translate key="event.datetime" /></th>
+        <th><f:translate key="event.venueName" /></th>
+        <th><f:translate key="event.venueCity" /></th>
+        <th><f:translate key="event.venueCountry" /></th>
+        <th> </th>
+    </tr>
+
+    <f:for each="{events}" as="event">
+        <tr>
+            <td><f:link.action action="show" arguments="{event : event}" pageUid="{settings.detailPid}"> {event.datetime -> f:format.date(format: settings.dateFormat)}</f:link.action></td>
+            <td><f:link.action action="show" arguments="{event : event}" pageUid="{settings.detailPid}"> {event.venueName}</f:link.action></td>
+            <td><f:link.action action="show" arguments="{event : event}" pageUid="{settings.detailPid}"> {event.venueCity}</f:link.action></td>
+            <td><f:link.action action="show" arguments="{event : event}" pageUid="{settings.detailPid}"> {event.venueCountry}</f:link.action></td>
+            <td>
+                <f:if condition="{event.offerUrl}">
+                    <a href="{event.offerUrl}">{event.offerType}</a>
+                </f:if>
+            </td>
+        </tr>
+    </f:for>
+</table>

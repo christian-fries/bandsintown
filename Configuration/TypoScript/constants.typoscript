@@ -1,0 +1,23 @@
+
+plugin.tx_bandsintown_events {
+    view {
+        # cat=bandsintown/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:bandsintown/Resources/Private/Templates/
+        # cat=bandsintown/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:bandsintown/Resources/Private/Partials/
+        # cat=bandsintown/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:bandsintown/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=bandsintown//a; type=string; label=Default storage PID
+        storagePid =
+    }
+
+    settings {
+        # cat=basic//a; type=boolean; label=Whether or not the RSVP button should be displayed
+        dateFormat = d.m.Y
+
+        # cat=basic//b; type=boolean; label=Whether or not the RSVP button should be displayed
+        rsvpButton = 1
+    }
+}

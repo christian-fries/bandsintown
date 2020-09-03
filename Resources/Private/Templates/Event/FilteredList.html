@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+
+	<f:section name="content">
+		<!--TYPO3SEARCH_end-->
+		<f:if condition="{settings.enableFiltering}">
+			<f:render partial="Event/FilterForm.html" arguments="{_all}" />
+		</f:if>
+
+		<f:if condition="{settings.itemsPerPage}">
+			<f:then>
+				<f:widget.paginate objects="{events}" as="paginatedEvents" configuration="{itemsPerPage: settings.itemsPerPage, insertAbove: 0, insertBelow: 1}">
+					<f:render partial="Event/List.html" arguments="{events: paginatedEvents, settings: settings}" />
+				</f:widget.paginate>
+			</f:then>
+			<f:else>
+				<f:render partial="Event/List.html" arguments="{events: events, settings: settings}" />
+			</f:else>
+		</f:if>
+		<!--TYPO3SEARCH_begin-->
+	</f:section>
+</html>

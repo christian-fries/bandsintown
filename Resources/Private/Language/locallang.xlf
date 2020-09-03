@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-01-05T17:54:04Z" product-name="bandsintown">
+		<header/>
+		<body>
+			<trans-unit id="filter.searchString">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="filter.artists">
+				<source>Artists</source>
+			</trans-unit>
+			<trans-unit id="filter.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="filter.type.all">
+				<source>All</source>
+			</trans-unit>
+			<trans-unit id="filter.type.upcoming">
+				<source>Upcoming events</source>
+			</trans-unit>
+			<trans-unit id="filter.type.past">
+				<source>Past events</source>
+			</trans-unit>
+			<trans-unit id="filter.orderBy">
+				<source>Sorting by</source>
+			</trans-unit>
+			<trans-unit id="filter.orderBy.datetime">
+				<source>Event date</source>
+			</trans-unit>
+			<trans-unit id="filter.orderBy.crdate">
+				<source>Announcement date</source>
+			</trans-unit>
+			<trans-unit id="filter.orderDirection">
+				<source>Sorting direction</source>
+			</trans-unit>
+			<trans-unit id="filter.orderDirection.ASC">
+				<source>Ascending</source>
+			</trans-unit>
+			<trans-unit id="filter.orderDirection.DESC">
+				<source>Descending</source>
+			</trans-unit>
+			<trans-unit id="filter.buttonText">
+				<source>Filter</source>
+			</trans-unit>
+			<trans-unit id="event.when">
+				<source>When</source>
+			</trans-unit>
+			<trans-unit id="event.where">
+				<source>Where</source>
+			</trans-unit>
+			<trans-unit id="event.lineup">
+				<source>Lineup</source>
+			</trans-unit>
+			<trans-unit id="event.offer">
+				<source>Tickets</source>
+			</trans-unit>
+			<trans-unit id="event.rsvp">
+				<source>RSVP on Bandsintown</source>
+			</trans-unit>
+			<trans-unit id="event.datetime">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="event.venueName">
+				<source>Venue</source>
+			</trans-unit>
+			<trans-unit id="event.venueCity">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="event.venueRegion">
+				<source>Region</source>
+			</trans-unit>
+			<trans-unit id="event.venueCountry">
+				<source>Country</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

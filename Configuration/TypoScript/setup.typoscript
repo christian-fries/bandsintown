@@ -1,0 +1,18 @@
+plugin.tx_bandsintown {
+    view {
+        templateRootPaths.0 = EXT:bandsintown/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_bandsintown_events.view.templateRootPath}
+        partialRootPaths.0 = EXT:bandsintown/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_bandsintown_events.view.partialRootPath}
+        layoutRootPaths.0 = EXT:bandsintown/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_bandsintown_events.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_bandsintown_events.persistence.storagePid}
+    }
+
+    settings {
+        dateFormat = {$plugin.tx_bandsintown_events.settings.dateFormat}
+        rsvpButton = {$plugin.tx_bandsintown_events.settings.rsvpButton}
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "name": "chf/bandsintown",
+    "type": "typo3-cms-extension",
+    "description": "Embed artist and event data from bandsintown on your TYPO3 website.",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Christian Fries",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "typo3/cms-core": "~9.5.17 || ~10.4.2",
+        "typo3/cms-scheduler": "~9.5.17 || ~10.4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "CHF\\Bandsintown\\": "Classes"
+        }
+    }
+}

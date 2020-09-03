@@ -1,0 +1,2 @@
+# cat=API; type=string; label=Application ID: To access the Bandsintown API, you need to provide an Application ID. Request your Application ID here: https://www.artists.bandsintown.com/support/api-installation
+applicationId =

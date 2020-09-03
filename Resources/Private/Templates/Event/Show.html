@@ -1,0 +1,45 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+	<f:layout name="Default" />
+
+	<f:section name="content">
+		<h2><f:if condition="{event.title}"><f:then>{event.title}</f:then><f:else>{event.venue}</f:else></f:if></h2>
+
+		<f:if condition="{event.description}">
+			<div class="event-description mb-3">
+				{event.description -> f:format.html()}
+			</div>
+		</f:if>
+
+		<div class="event-data">
+			<table class="table">
+				<tr>
+					<th><f:translate key="event.when"/></th>
+					<td>{event.datetime -> f:format.date(format: settings.dateFormat)}</td>
+				</tr>
+				<tr>
+					<th><f:translate key="event.where"/></th>
+					<td>{event.venue}</td>
+				</tr>
+				<tr>
+					<th><f:translate key="event.lineup"/></th>
+					<td>{event.lineup}</td>
+				</tr>
+				<f:if condition="{event.offerUrl}">
+					<tr>
+						<th><f:translate key="event.offer"/></th>
+						<td><a href="{event.offerUrl}" target="_blank">{event.offerType} <f:if condition="{event.offerStatus}">({event.offerStatus})</f:if></a></td>
+					</tr>
+				</f:if>
+
+			</table>
+		</div>
+
+		<f:if condition="{settings.rsvpButton}">
+			<div class="event-rsvp">
+				<a href="{event.url}" class="btn btn-outline-primary mb-3" target="_blank"><f:translate key="event.rsvp" /></a>
+			</div>
+		</f:if>
+
+		<f:link.action action="list" pageUid="{settings.listPid}">Back to list</f:link.action>
+	</f:section>
+</html>
