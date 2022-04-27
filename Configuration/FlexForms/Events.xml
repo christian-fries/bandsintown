@@ -18,7 +18,7 @@
                                 <renderType>selectMultipleSideBySide</renderType>
                                 <enableMultiSelectFilterTextfield>true</enableMultiSelectFilterTextfield>
                                 <foreign_table>tx_bandsintown_domain_model_artist</foreign_table>
-                                <foreign_table_where>AND tx_bandsintown_domain_model_artist.hidden = 0 AND (tx_bandsintown_domain_model_artist.sys_language_uid = 0 OR tx_bandsintown_domain_model_artist.sys_language_uid = -1) ORDER BY name</foreign_table_where>
+                                <foreign_table_where>AND tx_bandsintown_domain_model_artist.hidden = 0 ORDER BY name</foreign_table_where>
                                 <minitems>0</minitems>
                                 <maxitems>1000</maxitems>
                             </config>
