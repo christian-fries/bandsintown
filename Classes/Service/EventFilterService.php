@@ -11,8 +11,8 @@ declare(strict_types=1);
 namespace CHF\Bandsintown\Service;
 
 use CHF\Bandsintown\Domain\Dto\EventFilter;
-use TYPO3\CMS\Core\Localization\LanguageService;
 use TYPO3\CMS\Core\SingletonInterface;
+use TYPO3\CMS\Extbase\Utility\LocalizationUtility;
 
 class EventFilterService implements SingletonInterface
 {
@@ -31,17 +31,17 @@ class EventFilterService implements SingletonInterface
     {
         return [
             'type' => [
-                'all' => $this->getLanguageService()->sL('LLL:EXT:bandsintown/Resources/Private/Language/locallang.xlf:filter.type.all'),
-                'upcoming' => $this->getLanguageService()->sL('LLL:EXT:bandsintown/Resources/Private/Language/locallang.xlf:filter.type.upcoming'),
-                'past' => $this->getLanguageService()->sL('LLL:EXT:bandsintown/Resources/Private/Language/locallang.xlf:filter.type.past'),
+                'all' => LocalizationUtility::translate('LLL:EXT:bandsintown/Resources/Private/Language/locallang.xlf:filter.type.all'),
+                'upcoming' => LocalizationUtility::translate('LLL:EXT:bandsintown/Resources/Private/Language/locallang.xlf:filter.type.upcoming'),
+                'past' => LocalizationUtility::translate('LLL:EXT:bandsintown/Resources/Private/Language/locallang.xlf:filter.type.past'),
             ],
             'orderBy' => [
-                'datetime' => $this->getLanguageService()->sL('LLL:EXT:bandsintown/Resources/Private/Language/locallang.xlf:filter.orderBy.datetime'),
-                'crdate' => $this->getLanguageService()->sL('LLL:EXT:bandsintown/Resources/Private/Language/locallang.xlf:filter.orderBy.crdate'),
+                'datetime' => LocalizationUtility::translate('LLL:EXT:bandsintown/Resources/Private/Language/locallang.xlf:filter.orderBy.datetime'),
+                'crdate' => LocalizationUtility::translate('LLL:EXT:bandsintown/Resources/Private/Language/locallang.xlf:filter.orderBy.crdate'),
             ],
             'orderDirection' => [
-                'ASC' => $this->getLanguageService()->sL('LLL:EXT:bandsintown/Resources/Private/Language/locallang.xlf:filter.orderDirection.ASC'),
-                'DESC' => $this->getLanguageService()->sL('LLL:EXT:bandsintown/Resources/Private/Language/locallang.xlf:filter.orderDirection.DESC'),
+                'ASC' => LocalizationUtility::translate('LLL:EXT:bandsintown/Resources/Private/Language/locallang.xlf:filter.orderDirection.ASC'),
+                'DESC' => LocalizationUtility::translate('LLL:EXT:bandsintown/Resources/Private/Language/locallang.xlf:filter.orderDirection.DESC'),
             ]
         ];
     }
@@ -52,10 +52,5 @@ class EventFilterService implements SingletonInterface
             'datetime' => 'DateTime',
             'crdate' => 'CrDate'
         ];
-    }
-
-    private function getLanguageService(): LanguageService
-    {
-        return $GLOBALS['LANG'];
     }
 }
