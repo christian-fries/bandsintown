@@ -18,5 +18,10 @@
         "psr-4": {
             "CHF\\Bandsintown\\": "Classes"
         }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "bandsintown"
+        }
     }
 }
